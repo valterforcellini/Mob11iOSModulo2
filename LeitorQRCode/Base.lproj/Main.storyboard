@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LeitorQRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habilitar o botão &quot;CANCELAR&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-lf-Cfe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="58" y="276" width="166" height="14"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKu-yE-NL9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.91372549020000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Ler QR Code"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9i-eN-1ia"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfn-2o-bXo">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="231" y="259" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="1kG-OZ-Ot0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wKu-yE-NL9" secondAttribute="trailing" constant="100" id="5VL-tC-oDB"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="8dW-IP-3uL"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="C9N-kK-YAn"/>
+                            <constraint firstItem="gPI-lf-Cfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="JZN-Ix-60r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wKu-yE-NL9" secondAttribute="bottom" constant="170" id="ReR-j6-tUu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wKu-yE-NL9" secondAttribute="trailing" constant="100" id="Xgp-BP-asK"/>
+                            <constraint firstItem="gPI-lf-Cfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="Y5Z-xa-jn9"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="YUv-qj-ZqT"/>
+                            <constraint firstItem="wKu-yE-NL9" firstAttribute="top" secondItem="gPI-lf-Cfe" secondAttribute="bottom" constant="55" id="cwu-2k-vnR"/>
+                            <constraint firstItem="gPI-lf-Cfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="dSD-GF-4yd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wKu-yE-NL9" secondAttribute="bottom" constant="170" id="ysn-AC-zsF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gPI-lf-Cfe"/>
+                                <exclude reference="wKu-yE-NL9"/>
+                                <exclude reference="Qfn-2o-bXo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ReR-j6-tUu"/>
+                                <exclude reference="ysn-AC-zsF"/>
+                                <exclude reference="1kG-OZ-Ot0"/>
+                                <exclude reference="5VL-tC-oDB"/>
+                                <exclude reference="8dW-IP-3uL"/>
+                                <exclude reference="C9N-kK-YAn"/>
+                                <exclude reference="Xgp-BP-asK"/>
+                                <exclude reference="YUv-qj-ZqT"/>
+                                <exclude reference="cwu-2k-vnR"/>
+                                <exclude reference="JZN-Ix-60r"/>
+                                <exclude reference="Y5Z-xa-jn9"/>
+                                <exclude reference="dSD-GF-4yd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gPI-lf-Cfe"/>
+                                <include reference="wKu-yE-NL9"/>
+                                <include reference="Qfn-2o-bXo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ReR-j6-tUu"/>
+                                <include reference="ysn-AC-zsF"/>
+                                <include reference="1kG-OZ-Ot0"/>
+                                <include reference="5VL-tC-oDB"/>
+                                <include reference="8dW-IP-3uL"/>
+                                <include reference="C9N-kK-YAn"/>
+                                <include reference="Xgp-BP-asK"/>
+                                <include reference="YUv-qj-ZqT"/>
+                                <include reference="cwu-2k-vnR"/>
+                                <include reference="JZN-Ix-60r"/>
+                                <include reference="Y5Z-xa-jn9"/>
+                                <include reference="dSD-GF-4yd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="showCancelButtonSwitch" destination="Qfn-2o-bXo" id="zgA-ec-uZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241.5" y="393"/>
+        </scene>
+    </scenes>
+</document>
