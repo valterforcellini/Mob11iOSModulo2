@@ -29,7 +29,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             presentViewController(reader, animated: true, completion: nil)
         }
         else {
-            let alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Error", message: "Erro Reader not supported by the current device", preferredStyle: .Alert)
             alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
             
             presentViewController(alert, animated: true, completion: nil)
